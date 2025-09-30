@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form - VitalCare</title>
+  <style>
+    :root {
+      --accent: #0b6cf0;
+      --dark: #0b1220;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --bg: #f5f7fb;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: var(--card);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px;
+      color: var(--dark);
+    }
+
+    input, textarea, select {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #d7e6ff;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .btn {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-submit {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-submit:hover {
+      background: #0848a8;
+    }
+
+    .btn-back {
+      background: #6b7280;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+    }
+
+    .btn-back:hover {
+      background: #4b5563;
+    }
+
+    /* Responsive behavior */
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      input, textarea, select {
+        font-size: 13px;
+        padding: 10px;
+      }
+      .btn {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Form</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="role">I am a</label>
+      <select id="role" name="role">
+        <option>Surgeon / Clinician</option>
+        <option>Patient</option>
+        <option>Caregiver</option>
+        <option>Distributor</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit" class="btn btn-submit">Send Message</button>
+    </form>
+
+    <!-- Back to Home Button -->
+    <a href="vitalcare solution.html" class="btn btn-back">← Back to Home</a>
+  </div>
+</body>
+</html>
