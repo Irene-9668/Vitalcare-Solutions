@@ -4,10 +4,51 @@
   <meta charset="UTF-8">
   <title>Knee System - Vitalcare Solutions</title>
   <link rel="stylesheet" href="style.css">
+<style>
+   /* === Product Gallery (Flex Layout) === */
+  .product-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;       /* allows images to wrap to next row */
+    margin-top: 30px;
+  }
+
+  .product-gallery figure {
+    text-align: center;
+    max-width: 200px;      /* equal width for all */
+    flex: 1 1 200px;       /* responsive sizing */
+  }
+
+  .product-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   /* keep proportions */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #fff;
+  }
+
+  .product-gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+
+    /* === Section Headings === */
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #005f73;
+      text-align: left;
+    }
+</style>
 </head>
 <body>
   <nav>
-    <a href="index.html">← Back to Home</a>
+    <a href="vitalcare solution.html">← Back to Home</a>
   </nav>
 
   <h1>Knee System</h1>
@@ -16,11 +57,79 @@
     helping patients regain mobility and confidence in their everyday activities.
   </p>
 
-  <div class="product-gallery">
-    <img src="images/knee Femoral component.png" alt="Knee Femoral Component">
-    <img src="images/knee Plastic tibial Insert.png" alt="Knee Tibial Insert">
-    <img src="images/knee Tibial baseplate.png" alt="Knee Base Plate">
-  </div>
+ <!-- Femoral Components -->
+<h2>Femoral Components</h2>
+   <div class="product-gallery">
+<figure>
+      <img src="images/cruciate retaining (CR).png" alt="cruciate retaining">
+      <figcaption>cruciate retaining (CR)</figcaption>
+    </figure>
+<figure>
+      <img src="images/posterior stabilized (PS).png" alt="posterior stabilized">
+      <figcaption>posterior stabilized (PS)</figcaption>
+    </figure>
+<figure>
+      <img src="images/Posterior femoral Augment.png" alt="Posterior femoral Augment">
+      <figcaption>Posterior femoral Augment</figcaption>
+    </figure>
+<figure>
+      <img src="images/Distal femoral Augment.png" alt="Distal femoral Augment">
+      <figcaption>Distal femoral Augment</figcaption>
+    </figure>
+ </div>
+
+ <!-- Tibial Metal Back Components -->
+<h2>Tibial Metal Back Components</h2>
+<div class="product-gallery">
+<figure>
+      <img src="images/Tibial metal back (Top fitting).png" alt="Tibial metal back (Top fitting)">
+      <figcaption>Top fitting</figcaption>
+    </figure>
+<figure>
+      <img src="images/Tibial  metal back component(Side shifting).png" alt="Tibial  metal back component(Side shifting)">
+      <figcaption>Side shifting</figcaption>
+    </figure>
+ </div>
+
+<!-- Tibial Components -->
+<h2>Tibial Components</h2>
+<div class="product-gallery">
+<figure>
+      <img src="images/Tibial insert posterior side shifting.png" alt="Tibial insert posterior side shifting">
+      <figcaption>posterior stabilized</figcaption>
+    </figure>
+<figure>
+      <img src="images/Tibial insert cruciate Retaining(CR).png" alt="Tibial insert cruciate Retaining">
+      <figcaption>Cruciate Retaining(CR)</figcaption>
+    </figure>
+<figure>
+      <img src="images/patella component.png" alt="patella component">
+      <figcaption>patella component</figcaption>
+    </figure>
+<figure>
+      <img src="images/Tibial metal.png" alt="Tibial metal">
+      <figcaption>Tibial metal back stem</figcaption>
+    </figure>
+<figure>
+      <img src="images/Tibial metal back.png" alt="Tibial metal back">
+      <figcaption>Tibial metal back</figcaption>
+    </figure>
+<figure>
+      <img src="images/Tibial Augment block.png" alt="Tibial Augment block">
+      <figcaption>Tibial Augment block</figcaption>
+    </figure>
+<figure>
+      <img src="images/Offset adapter.png" alt="Offset adapter">
+      <figcaption>Offset adapter</figcaption>
+    </figure>
+<figure>
+      <img src="images/extension stem.png" alt="extension stem">
+      <figcaption>extension stem</figcaption>
+    </figure>
+</div>
 </body>
 </html>
+
+
+
 
